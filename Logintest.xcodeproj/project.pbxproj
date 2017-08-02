@@ -43,6 +43,8 @@
 		04046B9C1F30F1F800E0802C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04046B991F30F11400E0802C /* LoginController.swift */; };
 		04046B9D1F30F1FB00E0802C /*  LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04046B911F30F06600E0802C /*  LoginViewControllerProtocol.swift */; };
 		04046B9E1F30F1FD00E0802C /* SignupViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04046B941F30F09A00E0802C /* SignupViewControllerProtocol.swift */; };
+		04643CD11F3247B500ED6E4A /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643CD01F3247B500ED6E4A /* SignupViewModel.swift */; };
+		04643CD21F3247DA00ED6E4A /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643CD01F3247B500ED6E4A /* SignupViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,7 @@
 		04046B941F30F09A00E0802C /* SignupViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewControllerProtocol.swift; path = ../SignupViewControllerProtocol.swift; sourceTree = "<group>"; };
 		04046B961F30F0E400E0802C /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		04046B991F30F11400E0802C /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = ../LoginController.swift; sourceTree = "<group>"; };
+		04643CD01F3247B500ED6E4A /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,7 @@
 				04046B8A1F30EE5000E0802C /*  PasswordValidator.swift */,
 				04046B8C1F30EE8000E0802C /*  EmailAddressValidator.swift */,
 				04046B6C1F2FB16500E0802C /* SignupModel.swift */,
+				04643CD01F3247B500ED6E4A /* SignupViewModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -307,6 +311,7 @@
 				04046B8D1F30EE8000E0802C /*  EmailAddressValidator.swift in Sources */,
 				04046B461F2FAA9B00E0802C /* ViewController.swift in Sources */,
 				04046B971F30F0E400E0802C /* SignupController.swift in Sources */,
+				04643CD11F3247B500ED6E4A /* SignupViewModel.swift in Sources */,
 				04046B661F2FAE6900E0802C /* SignupViewController.swift in Sources */,
 				04046B441F2FAA9B00E0802C /* AppDelegate.swift in Sources */,
 				04046B6D1F2FB16500E0802C /* SignupModel.swift in Sources */,
@@ -328,6 +333,7 @@
 				04046B9D1F30F1FB00E0802C /*  LoginViewControllerProtocol.swift in Sources */,
 				04046B7C1F30ED3E00E0802C /* UserNameValidatorTests.swift in Sources */,
 				04046B8F1F30EE9700E0802C /*  PasswordValidator.swift in Sources */,
+				04643CD21F3247DA00ED6E4A /* SignupViewModel.swift in Sources */,
 				04046B841F30EDCD00E0802C /* ViewController.swift in Sources */,
 				04046B9E1F30F1FD00E0802C /* SignupViewControllerProtocol.swift in Sources */,
 				04046B861F30EDE200E0802C /* SignupViewController.swift in Sources */,
@@ -538,6 +544,7 @@
 				04046B5F1F2FAA9C00E0802C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04046B601F2FAA9C00E0802C /* Build configuration list for PBXNativeTarget "LogintestTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +553,7 @@
 				04046B621F2FAA9C00E0802C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
