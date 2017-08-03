@@ -53,6 +53,7 @@
 		04643CFC1F33A7F500ED6E4A /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643CD01F3247B500ED6E4A /* SignupViewModel.swift */; };
 		04643CFD1F33A7F500ED6E4A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04046B651F2FAE6900E0802C /* SignupViewController.swift */; };
 		04643CFE1F33A7F500ED6E4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04046B631F2FAD3C00E0802C /* LoginViewController.swift */; };
+		04643D081F33AC2200ED6E4A /* LogintestTests1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643D071F33AC2200ED6E4A /* LogintestTests1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,13 @@
 			remoteInfo = Logintest;
 		};
 		04643CEB1F33A66E00ED6E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04046B381F2FAA9B00E0802C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04046B3F1F2FAA9B00E0802C;
+			remoteInfo = Logintest;
+		};
+		04643D0A1F33AC2200ED6E4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04046B381F2FAA9B00E0802C /* Project object */;
 			proxyType = 1;
@@ -110,6 +118,9 @@
 		04643CE61F33A66D00ED6E4A /* LogintestTests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogintestTests2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04643CE81F33A66E00ED6E4A /* LogintestTests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogintestTests2.swift; sourceTree = "<group>"; };
 		04643CEA1F33A66E00ED6E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04643D051F33AC2200ED6E4A /* LogintestTests1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogintestTests1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04643D071F33AC2200ED6E4A /* LogintestTests1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogintestTests1.swift; sourceTree = "<group>"; };
+		04643D091F33AC2200ED6E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +145,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04643D021F33AC2200ED6E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -143,6 +161,7 @@
 				04046B421F2FAA9B00E0802C /* Logintest */,
 				04046B571F2FAA9C00E0802C /* LogintestTests */,
 				04643CE71F33A66E00ED6E4A /* LogintestTests2 */,
+				04643D061F33AC2200ED6E4A /* LogintestTests1 */,
 				04046B411F2FAA9B00E0802C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -153,6 +172,7 @@
 				04046B401F2FAA9B00E0802C /* Logintest.app */,
 				04046B541F2FAA9C00E0802C /* LogintestTests.xctest */,
 				04643CE61F33A66D00ED6E4A /* LogintestTests2.xctest */,
+				04643D051F33AC2200ED6E4A /* LogintestTests1.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,6 +272,15 @@
 			path = LogintestTests2;
 			sourceTree = "<group>";
 		};
+		04643D061F33AC2200ED6E4A /* LogintestTests1 */ = {
+			isa = PBXGroup;
+			children = (
+				04643D071F33AC2200ED6E4A /* LogintestTests1.swift */,
+				04643D091F33AC2200ED6E4A /* Info.plist */,
+			);
+			path = LogintestTests1;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +337,24 @@
 			productReference = 04643CE61F33A66D00ED6E4A /* LogintestTests2.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		04643D041F33AC2200ED6E4A /* LogintestTests1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04643D0C1F33AC2300ED6E4A /* Build configuration list for PBXNativeTarget "LogintestTests1" */;
+			buildPhases = (
+				04643D011F33AC2200ED6E4A /* Sources */,
+				04643D021F33AC2200ED6E4A /* Frameworks */,
+				04643D031F33AC2200ED6E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04643D0B1F33AC2200ED6E4A /* PBXTargetDependency */,
+			);
+			name = LogintestTests1;
+			productName = LogintestTests1;
+			productReference = 04643D051F33AC2200ED6E4A /* LogintestTests1.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -332,6 +379,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 04046B3F1F2FAA9B00E0802C;
 					};
+					04643D041F33AC2200ED6E4A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04046B3F1F2FAA9B00E0802C;
+					};
 				};
 			};
 			buildConfigurationList = 04046B3B1F2FAA9B00E0802C /* Build configuration list for PBXProject "Logintest" */;
@@ -350,6 +402,7 @@
 				04046B3F1F2FAA9B00E0802C /* Logintest */,
 				04046B531F2FAA9C00E0802C /* LogintestTests */,
 				04643CE51F33A66D00ED6E4A /* LogintestTests2 */,
+				04643D041F33AC2200ED6E4A /* LogintestTests1 */,
 			);
 		};
 /* End PBXProject section */
@@ -373,6 +426,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		04643CE41F33A66D00ED6E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04643D031F33AC2200ED6E4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -446,6 +506,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04643D011F33AC2200ED6E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04643D081F33AC2200ED6E4A /* LogintestTests1.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -458,6 +526,11 @@
 			isa = PBXTargetDependency;
 			target = 04046B3F1F2FAA9B00E0802C /* Logintest */;
 			targetProxy = 04643CEB1F33A66E00ED6E4A /* PBXContainerItemProxy */;
+		};
+		04643D0B1F33AC2200ED6E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04046B3F1F2FAA9B00E0802C /* Logintest */;
+			targetProxy = 04643D0A1F33AC2200ED6E4A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -654,6 +727,32 @@
 			};
 			name = Release;
 		};
+		04643D0D1F33AC2300ED6E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LogintestTests1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylkovich.LogintestTests1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Logintest.app/Logintest";
+			};
+			name = Debug;
+		};
+		04643D0E1F33AC2300ED6E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LogintestTests1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylkovich.LogintestTests1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Logintest.app/Logintest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -689,6 +788,14 @@
 			buildConfigurations = (
 				04643CEE1F33A66F00ED6E4A /* Debug */,
 				04643CEF1F33A66F00ED6E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04643D0C1F33AC2300ED6E4A /* Build configuration list for PBXNativeTarget "LogintestTests1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04643D0D1F33AC2300ED6E4A /* Debug */,
+				04643D0E1F33AC2300ED6E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
