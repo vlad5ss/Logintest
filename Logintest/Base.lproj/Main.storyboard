@@ -63,7 +63,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QQh-dj-d2d"/>
-                                    <segue destination="rJt-Hh-ppB" kind="show" identifier="presentCreateaccount" id="DSR-cB-gze"/>
+                                    <segue destination="rJt-Hh-ppB" kind="presentation" identifier="presentCreateAccount" id="DSR-cB-gze"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fx5-ib-FDR">
