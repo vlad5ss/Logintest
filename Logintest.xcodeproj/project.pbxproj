@@ -54,6 +54,7 @@
 		04643CFD1F33A7F500ED6E4A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04046B651F2FAE6900E0802C /* SignupViewController.swift */; };
 		04643CFE1F33A7F500ED6E4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04046B631F2FAD3C00E0802C /* LoginViewController.swift */; };
 		04643D081F33AC2200ED6E4A /* LogintestTests1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643D071F33AC2200ED6E4A /* LogintestTests1.swift */; };
+		04643D101F34CC8500ED6E4A /* MockSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643D0F1F34CC8500ED6E4A /* MockSignupViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		04643D051F33AC2200ED6E4A /* LogintestTests1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogintestTests1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04643D071F33AC2200ED6E4A /* LogintestTests1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogintestTests1.swift; sourceTree = "<group>"; };
 		04643D091F33AC2200ED6E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04643D0F1F34CC8500ED6E4A /* MockSignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSignupViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 				04643CD61F33A43900ED6E4A /* MockLoginViewController.swift */,
 				04643CD81F33A47C00ED6E4A /* MockSignupController.swift */,
 				04643CDE1F33A52800ED6E4A /* MockSignupViewController.swift */,
+				04643D0F1F34CC8500ED6E4A /* MockSignupViewModel.swift */,
 				04643CE01F33A56E00ED6E4A /* MockUserNameValidator.swift */,
 				04643CDC1F33A4E500ED6E4A /* MockPasswordValidator.swift */,
 				04643CDA1F33A4B600ED6E4A /* MockEmailAddressValidator.swift */,
@@ -488,6 +491,7 @@
 				04046B591F2FAA9C00E0802C /* LogintestTests.swift in Sources */,
 				04643CDB1F33A4B600ED6E4A /* MockEmailAddressValidator.swift in Sources */,
 				04046B811F30EDC300E0802C /* LoginModel.swift in Sources */,
+				04643D101F34CC8500ED6E4A /* MockSignupViewModel.swift in Sources */,
 				04046B801F30EDAA00E0802C /* EmailAddressValidatorTests.swift in Sources */,
 				04046B9C1F30F1F800E0802C /* LoginController.swift in Sources */,
 				04046B7E1F30ED7300E0802C /* PasswordValidatorTests.swift in Sources */,
