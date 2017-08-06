@@ -57,6 +57,7 @@
 		04643D101F34CC8500ED6E4A /* MockSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643D0F1F34CC8500ED6E4A /* MockSignupViewModel.swift */; };
 		04643D121F3632E700ED6E4A /* MockLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643D111F3632E700ED6E4A /* MockLoginController.swift */; };
 		04643D141F36331900ED6E4A /* MockLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643D131F36331900ED6E4A /* MockLoginViewModel.swift */; };
+		04643D161F379A3400ED6E4A /* LoginModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643D151F379A3400ED6E4A /* LoginModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		04643D0F1F34CC8500ED6E4A /* MockSignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSignupViewModel.swift; sourceTree = "<group>"; };
 		04643D111F3632E700ED6E4A /* MockLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLoginController.swift; sourceTree = "<group>"; };
 		04643D131F36331900ED6E4A /* MockLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLoginViewModel.swift; sourceTree = "<group>"; };
+		04643D151F379A3400ED6E4A /* LoginModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		04046B371F2FAA9B00E0802C = {
 			isa = PBXGroup;
 			children = (
+				04643D151F379A3400ED6E4A /* LoginModelTests.swift */,
 				04046B421F2FAA9B00E0802C /* Logintest */,
 				04046B571F2FAA9C00E0802C /* LogintestTests */,
 				04643CE71F33A66E00ED6E4A /* LogintestTests2 */,
@@ -485,6 +488,7 @@
 				04643CDD1F33A4E500ED6E4A /* MockPasswordValidator.swift in Sources */,
 				04643CD71F33A43900ED6E4A /* MockLoginViewController.swift in Sources */,
 				04046B7C1F30ED3E00E0802C /* UserNameValidatorTests.swift in Sources */,
+				04643D161F379A3400ED6E4A /* LoginModelTests.swift in Sources */,
 				04643CD51F33A30900ED6E4A /* SignupViewModelTests.swift in Sources */,
 				04046B8F1F30EE9700E0802C /*  PasswordValidator.swift in Sources */,
 				04643CD21F3247DA00ED6E4A /* SignupViewModel.swift in Sources */,
@@ -802,6 +806,7 @@
 				04643CEF1F33A66F00ED6E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04643D0C1F33AC2300ED6E4A /* Build configuration list for PBXNativeTarget "LogintestTests1" */ = {
 			isa = XCConfigurationList;
@@ -810,6 +815,7 @@
 				04643D0E1F33AC2300ED6E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
