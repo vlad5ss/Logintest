@@ -29,6 +29,8 @@
 		04046B9C1F30F1F800E0802C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04046B991F30F11400E0802C /* LoginController.swift */; };
 		04046B9D1F30F1FB00E0802C /*  LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04046B911F30F06600E0802C /*  LoginViewControllerProtocol.swift */; };
 		04046B9E1F30F1FD00E0802C /* SignupViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04046B941F30F09A00E0802C /* SignupViewControllerProtocol.swift */; };
+		0440034C1F39AE83006B8B12 /* SignupViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440034B1F39AE83006B8B12 /* SignupViewControllerTests.swift */; };
+		0440034F1F39AEF0006B8B12 /* UITextFieldStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440034E1F39AEF0006B8B12 /* UITextFieldStub.swift */; };
 		04643CD21F3247DA00ED6E4A /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643CD01F3247B500ED6E4A /* SignupViewModel.swift */; };
 		04643CD51F33A30900ED6E4A /* SignupViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643CD41F33A30900ED6E4A /* SignupViewModelTests.swift */; };
 		04643CD71F33A43900ED6E4A /* MockLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643CD61F33A43900ED6E4A /* MockLoginViewController.swift */; };
@@ -112,6 +114,8 @@
 		04046B941F30F09A00E0802C /* SignupViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewControllerProtocol.swift; path = ../SignupViewControllerProtocol.swift; sourceTree = "<group>"; };
 		04046B961F30F0E400E0802C /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		04046B991F30F11400E0802C /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = ../LoginController.swift; sourceTree = "<group>"; };
+		0440034B1F39AE83006B8B12 /* SignupViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewControllerTests.swift; sourceTree = "<group>"; };
+		0440034E1F39AEF0006B8B12 /* UITextFieldStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldStub.swift; sourceTree = "<group>"; };
 		04643CD01F3247B500ED6E4A /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		04643CD41F33A30900ED6E4A /* SignupViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewModelTests.swift; sourceTree = "<group>"; };
 		04643CD61F33A43900ED6E4A /* MockLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLoginViewController.swift; sourceTree = "<group>"; };
@@ -208,14 +212,16 @@
 			isa = PBXGroup;
 			children = (
 				04046B761F30EB6D00E0802C /* Mocks */,
-				04046B581F2FAA9C00E0802C /* LogintestTests.swift */,
+				0440034D1F39AED1006B8B12 /* stubs */,
 				04643D171F384BA000ED6E4A /* LoginViewControllerTests.swift */,
+				04046B581F2FAA9C00E0802C /* LogintestTests.swift */,
 				04643D151F379A3400ED6E4A /* LoginModelTests.swift */,
 				04046B791F30ECA700E0802C /* LoginViewModelTests.swift */,
 				04046B7B1F30ED3E00E0802C /* UserNameValidatorTests.swift */,
 				04643CD41F33A30900ED6E4A /* SignupViewModelTests.swift */,
 				04046B7D1F30ED7300E0802C /* PasswordValidatorTests.swift */,
 				04046B7F1F30EDAA00E0802C /* EmailAddressValidatorTests.swift */,
+				0440034B1F39AE83006B8B12 /* SignupViewControllerTests.swift */,
 				04046B5A1F2FAA9C00E0802C /* Info.plist */,
 			);
 			path = LogintestTests;
@@ -276,6 +282,14 @@
 				04046B991F30F11400E0802C /* LoginController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		0440034D1F39AED1006B8B12 /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				0440034E1F39AEF0006B8B12 /* UITextFieldStub.swift */,
+			);
+			name = stubs;
 			sourceTree = "<group>";
 		};
 		04643CE71F33A66E00ED6E4A /* LogintestTests2 */ = {
@@ -506,6 +520,8 @@
 				04046B591F2FAA9C00E0802C /* LogintestTests.swift in Sources */,
 				04643CDB1F33A4B600ED6E4A /* MockEmailAddressValidator.swift in Sources */,
 				04046B811F30EDC300E0802C /* LoginModel.swift in Sources */,
+				0440034F1F39AEF0006B8B12 /* UITextFieldStub.swift in Sources */,
+				0440034C1F39AE83006B8B12 /* SignupViewControllerTests.swift in Sources */,
 				04643D101F34CC8500ED6E4A /* MockSignupViewModel.swift in Sources */,
 				04046B801F30EDAA00E0802C /* EmailAddressValidatorTests.swift in Sources */,
 				04046B9C1F30F1F800E0802C /* LoginController.swift in Sources */,
