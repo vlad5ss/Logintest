@@ -10,6 +10,10 @@ import XCTest
 
 class SignupViewControllerTests: XCTestCase {
     
+    fileprivate let validUserName = "abcdefghij"
+    fileprivate let validPassword = "D%io7AFn9Y"
+    fileprivate let validEmailAddress = "amishra@asmtechnology.com"
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,16 +24,56 @@ class SignupViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testViewDidLoad_Calls_PerformInitialSetup_OnViewModel() {
+        
+        let expectation = self.expectation(description: "expected performInitialViewSetup() to be called")
+        
+        let signupViewController = SignupViewController()
+        
+        let viewModel = MockSignupViewModel(view:signupViewController)
+        viewModel.performInitialViewSetupExpectation = expectation
+        
+        signupViewController.viewModel = viewModel
+        
+        signupViewController.viewDidLoad()
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testUserNameDidEndOnExit_Calls_UserNameDidEndOnExit_OnViewModel() {
+        
+        let expectation = self.expectation(description: "expected userNameDidEndOnExit() to be called")
+        
+        let signupViewController = SignupViewController()
+        
+        let viewModel = MockSignupViewModel(view:signupViewController)
+        viewModel.userNameDidEndOnExitExpectation = expectation
+        
+        signupViewController.viewModel = viewModel
+        
+        signupViewController.userNameDidEndOnExit(self)
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
     }
+    
+    func testEmailAddressDidEndOnExit_Calls_EmailAddressDidEndOnExit_OnViewModel() {
+        
+        let expectation = self.expectation(description: "expected emailAddressDidEndOnExit() to be called")
+        
+        let signupViewController = SignupViewController()
+        
+        let viewModel = MockSignupViewModel(view:signupViewController)
+        viewModel.emailAddressDidEndOnExitExpectation = expectation
+        
+        signupViewController.viewModel = viewModel
+        
+        signupViewController.emailAddressDidEndOnExit(self)
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
+    }
+    
+    
+    
+    
     
 }
