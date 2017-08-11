@@ -73,7 +73,39 @@ class SignupViewControllerTests: XCTestCase {
     }
     
     
+    func testPasswordDidEndOnExit_Calls_PasswordDidEndOnExit_OnViewModel() {
+        
+        let expectation = self.expectation(description: "expected passwordDidEndOnExit() to be called")
+        
+        let signupViewController = SignupViewController()
+        
+        let viewModel = MockSignupViewModel(view:signupViewController)
+        viewModel.passwordDidEndOnExitExpectation = expectation
+        
+        signupViewController.viewModel = viewModel
+        
+        signupViewController.passwordDidEndOnExit(self)
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
+    }
     
+    func testConfirmPasswordDidEndOnExit_Calls_ConfirmPasswordDidEndOnExit_OnViewModel() {
+        
+        let expectation = self.expectation(description: "expected confirmPasswordDidEndOnExit() to be called")
+        
+        let signupViewController = SignupViewController()
+        
+        let viewModel = MockSignupViewModel(view:signupViewController)
+        viewModel.confirmPasswordDidEndOnExitExpectation = expectation
+        
+        signupViewController.viewModel = viewModel
+        
+        signupViewController.confirmPasswordDidEndOnExit(self)
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
+    }
+    
+
     
     
 }
