@@ -190,6 +190,58 @@ class SignupViewControllerTests: XCTestCase {
     }
     
 
+    func testTextFieldShouldChangeCharacters_emailAddressTextField_Calls_EmailAddressUpdated_OnViewModel_WithExpectedPassword() {
+        
+        let expectation = self.expectation(description: "expected emailAddressUpdated() to be called")
+        
+        let userNameTextFieldStub = UITextFieldStub(text:validUserName)
+        let passwordTextFieldStub = UITextFieldStub(text:validPassword)
+        let confirmPasswordTextFieldStub = UITextFieldStub(text:validPassword)
+        let emailAddressTextFieldStub = UITextFieldStub(text:validEmailAddress)
+        
+        let signupViewController = SignupViewController()
+        signupViewController.userNameTextField = userNameTextFieldStub
+        signupViewController.passwordTextField = passwordTextFieldStub
+        signupViewController.confirmPasswordTextField = confirmPasswordTextFieldStub
+        signupViewController.emailAddressTextField = emailAddressTextFieldStub
+        
+        let viewModel = MockSignupViewModel(view:signupViewController)
+        viewModel.emailAddressUpdatedExpectation = (expectation, expectedValue:validEmailAddress)
+        
+        signupViewController.viewModel = viewModel
+        
+        let _ = signupViewController.textField(emailAddressTextFieldStub,
+                                               shouldChangeCharactersIn: NSMakeRange(0, 1),
+                                               replacementString: "A")
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
+    }
     
+    
+    func testCreate_ValidUserNamePasswordEmailAddress_Calls_Signup_OnViewModel_WithExpectedUserName() {
+        
+        let expectation = self.expectation(description: "expected signup() to be called")
+        
+        let userNameTextFieldStub = UITextFieldStub(text:validUserName)
+        let passwordTextFieldStub = UITextFieldStub(text:"")
+        let confirmPasswordTextFieldStub = UITextFieldStub(text:"")
+        let emailAddressTextFieldStub = UITextFieldStub(text:"")
+        
+        let signupViewController = SignupViewController()
+        signupViewController.userNameTextField = userNameTextFieldStub
+        signupViewController.passwordTextField = passwordTextFieldStub
+        signupViewController.confirmPasswordTextField = confirmPasswordTextFieldStub
+        signupViewController.emailAddressTextField = emailAddressTextFieldStub
+        
+        let viewModel = MockSignupViewModel(view:signupViewController)
+        viewModel.signupExpectation = (expectation, expectedUserName:validUserName, expectedPassword:"", expectedEmailAddress:"")
+        
+        signupViewController.viewModel = viewModel
+        
+        signupViewController.create(self)
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
+    }
+
     
 }
